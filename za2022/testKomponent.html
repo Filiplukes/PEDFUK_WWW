@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/testKomponent.css">
+    <title>Test Komponent</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/testKomponent.js"></script>
+</head>
+<body>
+
+<h1 class="header" width="100%">Samostudium IT</h1>
+
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Hlavní stránka</a></li>
+        <li><a href="komponenty.html">Základní komponenty</a></li>
+        <li><a href="data.html">Ukládání dat</a></li>
+        <li><a href="program.html">Základy k programování</a></li>
+        <li><a href="vysledky.html">Výsledky</a></li>
+    </ul>
+</nav>
+
+
+<div class="text" align="center">
+    <h2>Test komponenty PC</h2>
+    <div >
+        <div>
+
+            <video width="50%" height="50%" id="komVid" autoplay = "true" >
+                <source src="videa/testKomponent.mp4" type="video/mp4" >
+                Your browser does not support the HTML5 Video element.
+            </video>
+
+
+        </div>
+
+
+        <div id="answers">
+            <div class="answers">
+                <button class="button" onclick="answer(1)" id="control">Procesor</button>
+                <button class="button" onclick="answer(2)" id="control">Grafická karta</button>
+                <button class="button" onclick="answer(3)" id="control">Harddisk</button>
+                <button class="button" onclick="answer(4)" id="control">Mechanika</button>
+            </div>
+
+            <div class="answers">
+                <button class="button" onclick="answer(5)" id="control">Operační paměť</button>
+                <button class="button" onclick="answer(6)" id="control">Zdroj</button>
+                <button class="button" onclick="answer(7)" id="control">Flash disk</button>
+                <button class="button" onclick="answer(8)" id="control">Základní deska</button>
+            </div>
+        </div>
+
+
+            <button class="start" onclick="start()" id="startButt">Spustit test</button>
+
+    </div>
+
+
+    <dialog id="window" class="dialog">
+        <h3 id="konec">Konec testu</h3>
+        <label for="name">Jméno: </label>
+        <input type="text" id="name"  class="input" required>
+        <button id="exit" class="exit">Neukládat</button>
+        <button id="save" class="save">Ulož</button>
+    </dialog>
+
+
+</div>
+
+
+<div class="pata"> Filip Lukeš BIT PeDF UK 2022 </div>
+</body>
+</html>

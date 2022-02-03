@@ -57,9 +57,11 @@ nav.menu a:hover {
 
 .pata {
     box-sizing: border-box;
+    float: left;
     width: 100%;
     text-align: center;
     background: rgba(0, 255, , 0.6);
+
 
 }
 
@@ -77,7 +79,12 @@ nav.menu a:hover {
     }
 
     .pata {
-        margin-top: 12em;
+          box-sizing: border-box;
+            width: 100%;
+            text-align: center;
+            background: rgba(0, 0, 255, 0.6);
+            padding: auto;
+            float: left;
 
     }
 

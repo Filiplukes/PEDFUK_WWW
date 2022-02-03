@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Index</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/vysledky.js"></script>
+</head>
+<body>
+
+<h1 class="header">Samostudium IT</h1>
+
+<nav class="menu">
+    <ul>
+        <li><a href="index.html">Hlavní stránka</a></li>
+        <li><a href="komponenty.html">Základní komponenty</a></li>
+        <li><a href="data.html">Ukládání dat</a></li>
+        <li><a href="program.html">Základy k programování</a></li>
+        <li><a href="vysledky.html">Výsledky</a></li>
+    </ul>
+</nav>
+
+
+<div class="text">
+    <h2>Hlavní stránka</h2>
+
+    <p>
+      Zde najdete nejvyšší dosažené skóre.
+    </p>
+
+    <script>
+    document.write("<table width='50%' border='2px'  >");
+
+
+    document.write("<tr><th>Jméno </th><th> Skóre za komponenty </th></tr>");
+
+    for (let i = 0; i < localStorage.length; i++) {
+
+    user=JSON.parse(localStorage.getItem(localStorage.key(i)))
+
+    console.log(user);
+
+    document.write("<tr><th>" + user.name + "</th><th>" + user.scoreKomp + "</th></tr>");
+
+    }
+
+    document.write("</table>");
+
+
+
+ </script>
+
+
+</div>
+
+
+<div class="pata"> Filip Lukeš BIT PeDF UK 2022 </div>
+</body>
+</html>
